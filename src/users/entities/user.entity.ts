@@ -11,9 +11,9 @@ export class User {
   @Column()
   password: string;
 
-  @Column({ default: 'CLIENT' }) // Aquí manejamos los roles ADMIN y CLIENT
+  @Column({ default: 'CLIENT' }) 
   role: string;
 
   @Column({ default: true })
-  activo: boolean; // Para la eliminación lógica
+  activo: boolean; 
 }
